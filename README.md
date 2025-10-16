@@ -86,9 +86,6 @@ aws eks update-kubeconfig --name your-cluster-name --region your-region
 ```bash
 node example.js
 ```
-
-![Example Output](images/image-1.png)
-
 ## Usage
 
 ```javascript
@@ -120,10 +117,7 @@ const logs = await client.getPodLogs('pod-name', 'default', 100);
 
 ## Running in EKS (Production)
 
-When running inside EKS as a containerized application, responsibilities are split between developers and DevOps.
-
----
-
+![Example Output](images/image-1.png)
 ## Developer Tasks
 
 ### 1. Build and Push Docker Image
