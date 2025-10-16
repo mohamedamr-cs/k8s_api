@@ -120,14 +120,21 @@ const logs = await client.getPodLogs('pod-name', 'default', 100);
 ![Example Output](images/image-1.png)
 ## Developer Tasks
 
-### 1. Build and Push Docker Image
+### 1. Implement Your Application Logic
+
+Use the K8sClient to build your application:
+- Add new methods to `index.js` for additional Kubernetes operations you need
+- Modify `example.js` or create your own application file
+- Test locally using your kubeconfig to ensure everything works
+
+### 2. Build and Push Docker Image
 
 ```bash
 docker build -t your-registry/k8s-api-client:latest .
 docker push your-registry/k8s-api-client:latest
 ```
 
-### 2. Provide Required Permissions List
+### 3. Provide Required Permissions List
 
 Tell DevOps team what Kubernetes permissions your app needs:
 - List namespaces
