@@ -1,0 +1,20 @@
+{
+    "name": "k8s-api-client",
+    "version": "1.0.0",
+    "description": "Kubernetes API client for local development with EKS",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "keywords": [
+        "kubernetes",
+        "k8s",
+        "eks",
+        "api"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@kubernetes/client-node": "^0.21.0"
+    }
+}
